@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: binance-perp-scanner
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scan_bot.py
+    plan: free

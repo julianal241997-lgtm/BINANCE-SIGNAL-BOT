@@ -1,0 +1,13 @@
+============================
+RUN GUIDE — Render 24/7 (Background Worker)
+============================
+1) Go to https://render.com and create an account.
+2) Create a new Service → Background Worker.
+3) Upload this folder (or connect a GitHub repo containing these files).
+4) In Render:
+   - Environment: Python
+   - Build Command: pip install -r requirements.txt
+   - Start Command: python scan_bot.py
+   - Plan: Free (ok for testing)
+5) Deploy. The worker will start scanning automatically and send alerts to Telegram.
+6) Logs are visible in Render's dashboard. No server or Docker needed.
